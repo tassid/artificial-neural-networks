@@ -1,7 +1,3 @@
-# %% [markdown]
-# MLP: comparação de ativações (Tanh vs ReLU) com mesma inicialização de pesos
-# Funciona em Colab e PyCharm. Requer: numpy, matplotlib, scikit-learn.
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import make_moons, load_iris
@@ -10,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 
 # ---------- Configurações ----------
-DATASET = "moons"   # "moons" ou "iris"
+DATASET = "iris"   # "moons" ou "iris"
 N_NEURONS = 3       # poucos neurônios para diferenças mais claras
 SEED_DATA = 7       # semente do dataset
 SEED_WEIGHTS = 13   # semente dos pesos (mesma para ambas as ativações)
